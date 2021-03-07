@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <header>
+        <p>Listado de compras
+        </p>
+    </header>
+    <seccion id="pantallaVacio">
+        <h1 id="pantallaVacio__titulo">No tienes Productos para comprar</h1>
+        <h1 id="pantallaVacio__emoji">😢</h1>
+    </seccion>
+    <seccion id="pantallaListado">
+        <h1 class="pantallaListado__titulo">Hola soy un listado</h1>
+        <ul class="list-group" id="pantallaListadoLista">
+        </ul>
+    </seccion>
+    <seccion id="pantallaDetalle">
+        <img src="imagenes/carne.svg" alt="carnes" class="pantallaDetalle__icono" id="pantallaDetalleIcono">
+        <h1 id="pantallaDetalleProducto">Bife de Chorizo</h1>
+        <p id="pantallaDetalleInfo">sdklsaldkjlaskj sadlkjsad dsalkdjlask
+            dsalkdjlask sadsa sadsad  dssda sdsa 
+            dsalkdjlask sadsdd dsad sdsadsadww
+        </p>
+        <button id="pantallaDetalleCerrar">cerrar y a comer</button>
+    </seccion>
+    <!-- Button trigger modal -->
+    <button type="button" id="botonCarga" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pantallaCarga">
+        Add+
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="pantallaCarga" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Agrega tu producto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="pantallaCargaProducto" class="form-label">Ingresa tu producto</label>
+                    <input type="text" class="form-control" id="pantallaCargaProducto" placeholder="Leche/carne/hevos">
+                </div>
+                <div class="mb-3">
+                    <label for="pantallaCargaIcono" class="form-label"></label>
+                    <select id="pantallaCargaIcono" class="form-select">
+                        <option value="imagenes/carne.svg">carne</option>
+                        <option value="imagenes/pollo.svg">Pollito</option>
+                        <option value="imagenes/leche.svg">leche</option>
+                        <option value="imagenes/agua.svg">agua</option>
+                        <option value="imagenes/limon.svg">Limon</option>
+                        <option value="imagenes/salchicha.svg">salchicha</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="pantallaCargaInfo" class="form-label">Agrega detalle de tu compra</label>
+                    <textarea class="form-control" id="pantallaCargaInfo" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+            <button type="button" class="btn btn-primary" id="pantallaCargaAdd">agregar y guardar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

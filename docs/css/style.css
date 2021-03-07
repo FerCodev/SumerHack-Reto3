@@ -1,0 +1,43 @@
+#pantallaDetalle, #pantallaListado{
+    display: none;
+}
+.pantallaListado__titulo{
+    display: none;
+}
+#botonCarga{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+}
+header{
+    background: cornflowerblue;
+    height: 85px;
+    padding-left: 10px;
+    padding-top: 15px;
+    font-size: 30px;
+}
+#pantallaVacio{
+    text-align: center;
+}
+#pantallaVacio__titulo{
+    padding: 70px;
+    font-size: 40px;
+}
+.pantallaListado__icono{
+    width: 40px;
+    margin-right: 6px;
+}
+#pantallaVacio__emoji{
+    font-size: 200px;
+}
+.pantallaDetalle__icono{
+    width: 250px;
+
+}
+#pantallaDetalle{
+    padding: 50px;
+    text-align: center;
+}
